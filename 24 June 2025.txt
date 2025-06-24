@@ -1,5 +1,0 @@
-24 June 2025
-Staging - Creating a list of files that needs to be updated
-Unstaging - Deleting the list
-Commit -  Creating an object in which files will get copied
-Push - Sending the file to GitHub server
