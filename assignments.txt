@@ -1,6 +1,7 @@
 1. Add files in remote repo and in local repo, then sync
 2. learn to undo the 3 commands required to push
 3. What happens when we have 2 commits and we try to push? Discuss in detail
+<<<<<<< HEAD
 4. How floating point number is stored in memory?
 5. Find out why there are no ++ and -- operators in python?
 6. Check if year is leap year
@@ -8,3 +9,5 @@
 8. Find smallest of 3 distinct numbers
 9. Farmer Problem
 10. Taxation problem.
+=======
+>>>>>>> ed3ffa07a384803746d7f9722b8c6b7d2e7906b6
