@@ -1,4 +1,4 @@
-import sys as s
+import sys
 
 def ice_cream():
     print('Yummy Amul icecream')
@@ -13,7 +13,7 @@ def junk():
     print('Chips and coke')
 
 def exit_program():
-    s.exit('End of program')
+    sys.exit('End of program')
 
 def invalid_choice():
     print('Invalid Choice entered')
