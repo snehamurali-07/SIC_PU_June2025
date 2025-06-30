@@ -50,3 +50,11 @@ CDAC is the best
 --------------------
 1. Which modules(s) are automatically loaded/imported by python interpreter  builtins(print, len, int) and sys
 2. In which module does print(), input(), len() functions come from?  built-in functions
+
+
+
+
+Solid principles
+Design principles
+learn methods of strings and list
+why command line arguments are stored in list and why not in tuple?
