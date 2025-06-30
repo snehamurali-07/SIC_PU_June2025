@@ -58,3 +58,10 @@ Solid principles
 Design principles
 learn methods of strings and list
 why command line arguments are stored in list and why not in tuple?
+
+python p2.py "states capital"
+
+states = []
+capital = []
+STATE     CAPITAL
+------------------
