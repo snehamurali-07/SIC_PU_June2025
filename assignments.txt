@@ -53,15 +53,17 @@ CDAC is the best
 
 
 
-
+WEEK2:
 Solid principles
 Design principles
 learn methods of strings and list
-why command line arguments are stored in list and why not in tuple?
 
-python p2.py "states capital"
 
-states = []
-capital = []
-STATE     CAPITAL
-------------------
+1. Name the Ultimate Parent class in Python (And its important methods and members)
+2. What are the double underscore methods (functions)
+3. How to define explicitly the main function in Python
+4. Try to know as many methods of list and str classes as possible.
+5. Why the command line Args are stored in a list and why not in tuple?
+6. What is Pythonic and pep3 ?
+
+
