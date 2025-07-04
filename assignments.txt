@@ -66,4 +66,20 @@ learn methods of strings and list
 5. Why the command line Args are stored in a list and why not in tuple?
 6. What is Pythonic and pep3 ?
 
+DSA
+1. Implement Binary search using Recursion
+2. Print N terms of Fibo series using Recursion
+3. Find Sum of digits of a number using Recursion
+4. Optimized selection sort
+5. Derive the efficiency of Quick Sort for Best Case
+6. Find out, how we can create read only variable in Python
 
+
+Python-Mysql, Python-Mongo
+Linked Lists (Stack and Queue Implementation)
+Merge Sort Implementation and Derivation of efficiency
+Trees, BST, AVL Tree
+Bucket Sort, Radix Sort, Heap Sort
+FLask-MySQL/Mongo
+NumPy, Pandas, Matplotlip and seaborn
+Project (Hackathon ???)
