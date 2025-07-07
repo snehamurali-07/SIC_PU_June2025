@@ -22,6 +22,19 @@ sorted()
 ---Built-in functions in Python, meaning they are available without needing to import any specific module. 
 
 
+Problems:
+1. Find smallest and biggest elements in an list of n numbers.
+2. Find the frequency an element in a list of n elements.
+3. Remove the duplicates in a list of size n
+4. Given a number, find very next possible bigger number that has all the digits of the given number.
+5. Accpet a number from the user (4 digit number where a digit can repeat at most 2 times )and print the coutn of recursions reqired to arrive at Karpekar's Constant.
+
+
+Recursive Problems:
+1. Find Factorial of a number
+2. Print N Fibo terms with 1 and 2 as 1st 2 terms.
+3. Find sum of list elements
+
 
 Assignments on Loops
 1. Find biggest digit in a number
@@ -73,6 +86,22 @@ DSA
 4. Optimized selection sort
 5. Derive the efficiency of Quick Sort for Best Case
 6. Find out, how we can create read only variable in Python
+
+
+
+Implement Stack using list, insert and delete from rear of the list
+Implement Stack using list, insert and delete from front of the list
+Implement Queue using list, insert at rear delete from front the list
+Implement Queue using list, insert front, delete from rear of the list
+
+
+How inheritance is technically implemented?
+Why a constructor cannot be final abstract and static?
+Why main() is public static and void?
+Explain runtime polymorphism (method over-riding).
+What is collection and explain its use and memory mapping?
+
+Can we optimize Selection Sort the way we did with Bubble sort and thus bring the BCE of Selection sort from O(n2) to O(n)
 
 
 Python-Mysql, Python-Mongo

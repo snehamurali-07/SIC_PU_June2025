@@ -1,0 +1,267 @@
+GIT CONFIGURATION:
+git config --global user.name "neelmyna"
+git config --global user.email "EMAIL-ID"
+
+CLONING A REPO:
+git clone https://github.com/neelmyna/sic_pu_june25
+
+By running the above command, we get a copy(clone) of our repo in our system.
+
+git clone https://PAT@github.com/neelmyna/sic_pu_june25
+
+
+IMPORTANT GIT COMMANDS:
+To update my remote repo w.r.t. local repo:
+
+1. Let the git add the files that need to updated
+2. Let the git commit the changes (Here, git creates an object inside which it copies all the files that need to be updated into the server. Also this object is cyber secured with encription. This copy is called as soft copy)
+3. Copy the commited object from the laptop/system to github server (to this last step, we need internet)
+
+1. stage	2. commit 	3. push
+
+$ git add .
+$ git commit -m "relavant message"
+$ git push origin main
+
+
+Operators in Python:
+Arithmetic Operators:
++ - * / // ** %
+
+-> All the Arithmetic operators are binary operators, i.e. they take 2 i/p (operands)
+25 + 3
+-> i/p are numbers. o/p is number
+-> The arithmetic operations are performed from L to R in an expression. Associtivity
+23 - 45 + 12 (Here 23 - 45 is performed 1st. the difference is stored in Accumalator and it is added to 12 immediately by the ALU).
+-> + and - have least precedence
+-> % / // * have higher precdedence
+-> ** has the highest precedence
+-> Arithmetic operators have higher precedence than relational operators and logical operators.
+
+
+TYPES OF MEMORY
+Secondary memory (hdd/ssd)
+RAM
+cache, buffers (unbuffered, line buffers and user customised delimited buffers), registers (general purpose, special purpose)
+Special Purpose registers: MAR, MDR, SP, FP, IR, PC, Accumalator
+
+scanf("%s", str); // space and newline are delimiters
+gets_s("%s", str, 32); 
+scanf("%[$^]s", str);
+kbhit()
+
+
+RELATIONAL OPERATORS:
+> < >= <= != ==
+
+-> All are binary operators
+-> i/p are numbers. o/p is boolean
+-> The >= and <= operators are looks redundant, but are required.
+
+
+***IMPORTANT: In programming the 1st priority (overall) is always simplicity (readability, maintainability)
+
+[20, 40]	Closed interval The range is from 20 to 40 (both inclusive)
+(15, 35)	Open Interval. The nd points are not included. So the range is 16 to 34
+[25, 50)	Right Open. Range is 25 to 49
+
+
+LOGICAL OPERATORS:
+and or not !
+
+There is only short circuited "and" and "or" in Python
+
+
+Note: There is no function overloading in python
+
+Mantra:
+The code we define/implement must be understandable by any programmer in the world.
+
+The O/P (execution) must be understandable by any common person in the world.
+
+range() is a function in Python which takes a range of values and YIELDS the values one by one from the range depending on the increment
+
+
+ARRAY/LIST:
+-> It is a data structure in which all elements of the array are stored in continuous memory locations. i.e. there is no gap between any 2 consecutive elements of the array.
+-> What is a Data Structure?
+Ans: Storage + Arrangement of data in memory.
+-> In the array usually all elements will be of the same DT. However, this need not true in the case of Python.
+-> An array is time efficient DS. Because the look-up is O(1). i.e. it takes 1 unit time to access any element in an array.
+-> Assuming size of an array is fixed, there is always wastage or shortage of memory. Hence fixed size arrays are always memory inefficient.
+-> When ever we pass an array to a function/method we pass only reference (address of 1st element) of the array. This kind of call to the function is called as call by reference.
+
+List in Python:
+-> It is an ordered DS (where we can use the indexing)
+-> Mutable
+
+
+Bubble Sort:
+In this sorting technique we start from any of the 2 ends of the list and compare consecutive elements.
+Assuming we start from Left and wish to sort in scaending order, we swap the elements if the left element is bigger than the right one.
+Continue doing so upto the end of UNSORTED ARRAY and thus we have put the biggest element in the unsorted array in its final position.
+Thus the element is taken from the unsorted array into the sorted array.
+
+RUN: Accessing all the elements in an array exactly once from one end of the array to the other.
+In Bubble sort, we bring the element into its final position in one Run over the unsorted array.
+
+Bubble sort doesnt predict anything before starting the sort algorithm nor it knows if the list is already sorted (i.e. after the 1st Run)
+
+The biggest element of the specific Run is moved to its final position. This is called as BUBBLING the element to a corner.
+
+While comparing the elements if we observe that there are no Swaps in a Run, then the list is already sorted.
+Thus we have a way to optimize the Bubble Sort. The optimzed Bubble sort has an improved efficiency of O(n).
+
+The Bubble Sort Algorithm:
+Start from one end and move towards other end of unsorted array
+	compare consecutive elements
+	if left element is bigger than the right
+		swap the elements
+
+With each iteration of the Run, the size of sorted list increases by one while the size of unsorted array decreases by one element.
+
+Pseudocode
+
+Assume input size to be N
+for i from 1 to N-1 do:
+	for j from 1 to N-1-i do:
+		if list[j] > list[j+1]
+			swap list[j], list[j+1]
+
+The outer loop Runs through the list (Accessing elements of the list exactly once)
+The inner loop compares consecutive elements of the unsorted list
+
+Optimized Bubble Sort:
+for i from 1 to N-1 do:
+	sorted = True # Assume the list is already sorted
+	for j from 1 to N-1-i do:
+		if list[j] > list[j+1]
+			swap list[j], list[j+1]
+			sorted = False
+	if(sorted)
+		break outer loop
+
+BCE of improved(optimised) Bubble sort is O(n)
+WCE of Bubble sort O(n2)
+
+
+
+Selection Sort:
+In each iteration of i, we SELECT the ith smallest element and put in its final position.
+
+Thus, there are N-1 iterations for i
+And N-1-i comparisons in each iteration of i
+
+NOTE: We need not apply any sorting on the given array when (when we know the given array is already sorted)
+
+for i from 2 to N do:
+	element = list[i-1]
+	position = i-1
+	for j = i-1 to N do:
+		if list[j] < element then:
+			element = list[j]
+			position = j
+	swap list[position] with list[i-1]
+
+
+
+
+DBMS:
+employee:
+	id, name, designation, phone_number, salary, commission, years_of_experience, technology
+
+id				         int			primary key auto_increment
+name			         varchar(30)	not null
+designation		         varchar(30)	
+phone_number	         bigint		    unique
+salary			         float		
+commission		         float		    default(0)
+years_of_experience      tinyint	
+technology		         varchar(30)	not null
+
+create database samsung_db;
+create table employees();
+insert into employees();
+
+
+CRUD OPERATIONS:
+Create one row			post		
+Read/Retrieve one/all	get  	(with id or without)
+Update					put		(with id)
+Delete					delete	(with id)
+
+
+
+
+OBJECT ORIENTED PROGRAMMING CONCEPTS:
+Inheritance: 
+polymorphism:
+abstraction:
+encapsulation:
+
+super()
+private members using _ (underscore)
+inherit in Python 
+class Derived (Base):
+
+Parent most class in Python Obj
+There is no compile time in Python. Hence no question of static polymorphism (function over loading)
+
+When a Function is called:
+Prologue
+Business logic
+Epilogue
+
+static member:
+
+class Cubical:
+	str printer
+	water_dispencer
+	def __init__(self):
+		chair
+		mug
+		computer
+		drawer
+
+	@static
+	def get_printer(cls):
+		return printer
+
+
+Tree:
+-> TREE is a DS
+-> Non Linear DS
+-> ACYCLIC DS (All PATHs in the DS are unique)
+-> The start/entry point of a Tree is called as ROOT
+-> Synonym for Tree is HIERARCHICAL DS
+Example: File System (Random Tree)
+-> BINARY TREE is a Tree which has a maximum (at most) of 2 CHILD NODES for every possible NODE in the Tree.
+-> The Root Node of the Tree is said to be at a LEVEL 1. Thus its immediate child node is at a LEVEL 2 and so on.
+The maximum possible Level in a Tree is said be DEPTH or HEIGHT of the Tree.
+In a Binary Tree of a Height N, we can have maximum of (2 power N) - 1 nodes.
+TRAVERSAL in a Tree is when we move from the current node to one of its immediate child node.
+A Tree with exactly or almost 2N-1 nodes is said to be COMPLETE BINARY TREE.
+The 2 child nodes of a node in a binary tree are said to be LEFT-CHILD and RIGHT-CHILD
+The Tree we can traverse strating from the Left-Child Node is said to be LEFT SUB-TREE and thus we can have Right Sub-Tree
+In a Complete Binary tree (BT) every traversal will isolate or remove 50% of the search area.
+If in a BT every node has exactly Zero or Two child nodes only, then such a BT is said to be STRICTLY BT.
+If in a BT, the data is ARRANGED in such way that data of the left child of every node is smaller than its own data (data of Parent node) and data of the right child node is greater than or equal to its own data, then such a BT is called as BINARY SEARCH TREE (BST).
+In a BST if the number of nodes is very small than 2N-1 (where N is tree height) then such a tree is said be UNBALANCED TREE. Conversly balanced tree and perfectly balanced is COMPLETE BST or BBST.
+The highest level in a tree is the HEIGHT of the tree.
+A node with  no child nodes is said to be LEAF NODE (Brahmachari node)
+While traversing a BT when ever we reach a new node, it itself can be considered as Root and the nodes that can be reached from it as nodes of the tree. Thus to perform any operation on a BT, we always Traverse and while traversing (for traversal) we can apply the solution RECURSSIVELY.
+Traversal exactly is to reach every node in the Tree exactly Once.
+If you traverse the BT in the order Left-Root-Right (LR`R) then it is said to be In-Order traversal.
+If you traverse the BT in the order Root-Left-Right (R`LR) then it is said to be In-Order traversal.
+If you traverse the BT in the order Left-Right-Root (LRR`) then it is said to be In-Order traversal.
+A new node is always added into the BST as Leaf Node.
+
+Balancing a BST
+Self balancing BST
+Contructing a BST using 2 traversals 
+CRUD operations
+
+Deleting a node from a BST:
+1. node with 0 child nodes 
+2. node with 1 child nodes 
+3. node with 2 child nodes
