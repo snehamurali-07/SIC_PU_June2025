@@ -23,6 +23,7 @@ $ git add .
 $ git commit -m "relavant message"
 $ git push origin main
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Operators in Python:
 Arithmetic Operators:
@@ -81,6 +82,7 @@ The O/P (execution) must be understandable by any common person in the world.
 
 range() is a function in Python which takes a range of values and YIELDS the values one by one from the range depending on the increment
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 ARRAY/LIST:
 -> It is a data structure in which all elements of the array are stored in continuous memory locations. i.e. there is no gap between any 2 consecutive elements of the array.
@@ -95,6 +97,7 @@ List in Python:
 -> It is an ordered DS (where we can use the indexing)
 -> Mutable
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Bubble Sort:
 In this sorting technique we start from any of the 2 ends of the list and compare consecutive elements.
@@ -144,7 +147,7 @@ for i from 1 to N-1 do:
 BCE of improved(optimised) Bubble sort is O(n)
 WCE of Bubble sort O(n2)
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Selection Sort:
 In each iteration of i, we SELECT the ith smallest element and put in its final position.
@@ -164,7 +167,7 @@ for i from 2 to N do:
 	swap list[position] with list[i-1]
 
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 DBMS:
 employee:
@@ -191,7 +194,7 @@ Update					put		(with id)
 Delete					delete	(with id)
 
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 OBJECT ORIENTED PROGRAMMING CONCEPTS:
 Inheritance: 
@@ -227,6 +230,7 @@ class Cubical:
 	def get_printer(cls):
 		return printer
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Tree:
 -> TREE is a DS
@@ -265,3 +269,22 @@ Deleting a node from a BST:
 1. node with 0 child nodes 
 2. node with 1 child nodes 
 3. node with 2 child nodes
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Deletion of a node in a BST:
+1. If the node to be deleted is leaf node:
+	Make the respective link of the Parent node of the node being deleted None.
+2. If node to be deleted has one child
+	Replace the child node of the node being deleted with itself.
+3. If node to be deleted has 2 children
+	Make the right child of the node being deleted, the right child of its parent (Thus the right grand child become right child). The right child of the node being deleted replaces itself.
+	And the left child node (and its descendents(sub tree)) becomes the left child of the left most child of its right child.
+4. What is we are deleting the root itself (when it has 2 child nodes) ???
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+PDP -Python Debugger
+Debugging is the skill of tracing the logic
+tracing the logic is to halt the execution of the program at specified instruction and checking the state of the program
+We do this by checking the values of the variablea at certain specific instruction in the code
